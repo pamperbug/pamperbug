@@ -2,36 +2,6 @@
 <html lang="en" data-bs-theme="light">
 
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="assets/img/favicon.ico" type="image/ico">
-
-    <!--Box Icons-->
-    <link rel="stylesheet" href="assets/fonts/boxicons/css/boxicons.min.css">
-
-    <!--AOS Animations-->
-    <link rel="stylesheet" href="assets/vendor/node_modules/css/aos.css">
-
-    <!--Iconsmind Icons-->
-    <link rel="stylesheet" href="assets/fonts/iconsmind/iconsmind.css">
-
-    <!--Google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
-
-    <!--Master slider-->
-    <link rel="stylesheet" href="assets/vendor/masterslider/style/masterslider.css">
-    <link rel="stylesheet" href="assets/vendor/masterslider/skins/black-1/style.css">
-
-    <!--Swiper slider-->
-    <link rel="stylesheet" href="assets/vendor/node_modules/css/swiper-bundle.min.css">
-    <!-- Main CSS -->
-    <link href="assets/css/theme.min.css" rel="stylesheet">
-
-    <title>PamperBug</title>
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-54FPQY8DYF"></script>
     <script>
@@ -41,6 +11,43 @@
 
       gtag('config', 'G-54FPQY8DYF');
     </script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="icon" href="assets/img/favicon.ico" type="image/ico"> -->
+    <link rel="preload" as="image" fetchpriority="high" media="all" href="assets/images/banner-info-1.svg" nonce>
+    <link rel="preload" as="image" fetchpriority="high" media="all" href="assets/images/banner-info-2.svg" nonce>
+    <link rel="preload" as="image" fetchpriority="high" media="all" href="assets/images/banner-info-3.svg" nonce>
+    <link rel="preload" as="image" fetchpriority="high" media="all" href="assets/images/banner-info-4.svg" nonce>
+
+    <!--Box Icons-->
+    <link rel="preload" href="assets/fonts/boxicons/fonts/boxicons.woff2" type="font/woff2" as="font" crossorigin>
+    <link rel="stylesheet" href="assets/fonts/boxicons/css/boxicons.min.css" media="all" onload="this.media='all'" nonce>
+
+    <!--AOS Animations-->
+    <link rel="stylesheet" href="assets/vendor/node_modules/css/aos.css" media="all" onload="this.media='all'" nonce>
+
+    <!--Iconsmind Icons-->
+    <link rel="preload" href="assets/fonts/iconsmind/fonts/icomoon.eot" as="font" crossorigin>
+    <link rel="stylesheet" href="assets/fonts/iconsmind/iconsmind.css" media="all" onload="this.media='all'" nonce>
+
+    <!--Google fonts-->
+    <link rel="DNS-prefetch" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" media="all" onload="this.media='all'" nonce>
+
+
+    <!--Master slider-->
+    <link rel="stylesheet" href="assets/vendor/masterslider/style/masterslider.css" media="all" onload="this.media='all'" nonce>
+    <link rel="stylesheet" href="assets/vendor/masterslider/skins/black-1/style.css" media="all" onload="this.media='all'" nonce>
+
+    <!--Swiper slider-->
+    <link rel="stylesheet" href="assets/vendor/node_modules/css/swiper-bundle.min.css"  media="all" onload="this.media='all'" nonce>
+    <!-- Main CSS -->
+    <link href="assets/css/theme.min.css" rel="stylesheet" nonce>
+
+    <title>PamperBug</title>
   </head>
 
   <body>
@@ -1218,12 +1225,12 @@
 
 
     <!-- scripts -->
-    <script src="assets/js/theme.bundle.min.js"></script>
+    <script src="assets/js/theme.bundle.min.js" nonce></script>
 
     <!--Mastert Slider start (Include jquery before master slider js)-->
-    <script src="assets/vendor/node_modules/js/jquery.min.js"></script>
-    <script src="assets/vendor/masterslider/jquery.easing.min.js"></script>
-    <script src="assets/vendor/masterslider/masterslider.min.js"></script>
+    <script src="assets/vendor/node_modules/js/jquery.min.js" nonce></script>
+    <script src="assets/vendor/masterslider/jquery.easing.min.js" nonce></script>
+    <script src="assets/vendor/masterslider/masterslider.min.js" nonce></script>
     <script>
       var slider = new MasterSlider();
       slider.setup('masterslider', {
@@ -1247,7 +1254,7 @@
 
 
     <!--Swiper slider-->
-    <script src="assets/vendor/node_modules/js/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/node_modules/js/swiper-bundle.min.js" nonce></script>
     <script>
       //swiper-projects
       var swiperProjects = new Swiper(".swiper-projects", {
