@@ -24030,7 +24030,13 @@ html[data-bs-theme=auto] .theme-icon-active i::after {
 }
 
 .swiper-pagination .swiper-pagination-bullet {
-  width: 2rem;
-  height: 2rem;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.navbar-brand-sticky, .navbar-brand-transparent {
+  background: #fff;
+  padding: 8px;
+  border-radius: 4px;
 }
 /*# sourceMappingURL=theme.css.map */
