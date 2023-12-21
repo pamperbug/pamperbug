@@ -24030,4 +24030,9 @@ html[data-bs-theme=auto] .theme-icon-active i::after {
   border: solid 2px #959bbd;
   border-radius: 14px;
 }
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: 2rem;
+  height: 2rem;
+}
 /*# sourceMappingURL=theme.css.map */
