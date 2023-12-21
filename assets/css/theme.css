@@ -24026,8 +24026,6 @@ html[data-bs-theme=auto] .theme-icon-active i::after {
 }
 
 .swiper-projects .swiper-slide {
-  background-color: #959bbd;
-  border: solid 2px #959bbd;
   border-radius: 14px;
 }
 
