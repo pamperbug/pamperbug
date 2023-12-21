@@ -24038,5 +24038,10 @@ html[data-bs-theme=auto] .theme-icon-active i::after {
   background: #fff;
   padding: 8px;
   border-radius: 4px;
+  min-width: 156px;
+}
+
+.section-image-cards .img-cards {
+  max-height: 400px;
 }
 /*# sourceMappingURL=theme.css.map */
