@@ -24024,4 +24024,28 @@ html[data-bs-theme=dark] .theme-icon-active i::after {
 html[data-bs-theme=auto] .theme-icon-active i::after {
   content: "\ed56";
 }
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: 2rem;
+  height: 2rem;
+}
+
+.navbar-brand-sticky, .navbar-brand-transparent {
+  background: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  min-width: 156px;
+}
+
+.section-image-cards .img-cards {
+  max-height: 400px;
+}
+
+@media screen and (min-width: 1400px) {
+  .swiper-pagination .swiper-pagination-bullet {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+  }
+}
 /*# sourceMappingURL=theme.css.map */
