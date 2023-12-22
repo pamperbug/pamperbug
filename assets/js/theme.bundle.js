@@ -9053,7 +9053,7 @@ indicatorsV.forEach(function (indicatorV) {
 },{}],15:[function(require,module,exports){
 "use strict";
 
-//For Live Projects.
+//For Live Projects
 // Add a 'loading' class to the body when a new page is being loaded
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelector('body').classList.add('loading');
