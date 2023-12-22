@@ -9053,6 +9053,26 @@ indicatorsV.forEach(function (indicatorV) {
 },{}],15:[function(require,module,exports){
 "use strict";
 
+//For Live Projects
+// Add a 'loading' class to the body when a new page is being loaded
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelector('body').classList.add('loading');
+});
+
+// Remove the 'loading' class from the body when the page is loaded
+window.addEventListener('load', function () {
+  document.querySelector('body').classList.remove('loading');
+  document.querySelector('body').classList.add('loaded');
+});
+
+// Display the preloader when a new page is being loaded
+window.addEventListener('beforeunload', function () {
+  document.querySelector('body').classList.add('loading');
+});
+
+},{}],16:[function(require,module,exports){
+"use strict";
+
 var _smoothScroll = _interopRequireDefault(require("smooth-scroll"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 //Smooth scroll
@@ -9062,7 +9082,7 @@ var scroll = new _smoothScroll["default"]('a[href*="#"]', {
   speedAsDuration: true
 });
 
-},{"smooth-scroll":5}],16:[function(require,module,exports){
+},{"smooth-scroll":5}],17:[function(require,module,exports){
 "use strict";
 
 var _svgInject = _interopRequireDefault(require("@iconfu/svg-inject"));
@@ -9070,7 +9090,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 //Inject the svg
 (0, _svgInject["default"])(document.querySelectorAll("img[data-inject-svg]"));
 
-},{"@iconfu/svg-inject":1}],17:[function(require,module,exports){
+},{"@iconfu/svg-inject":1}],18:[function(require,module,exports){
 "use strict";
 
 //BackToTop
@@ -9109,7 +9129,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-},{}],18:[function(require,module,exports){
+},{}],19:[function(require,module,exports){
 "use strict";
 
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
@@ -9130,11 +9150,12 @@ initTyped.forEach(function (eType) {
   new Typed(eType, tType);
 });
 
-},{"typed.js":6}],19:[function(require,module,exports){
+},{"typed.js":6}],20:[function(require,module,exports){
 "use strict";
 
 require("./custom/custom-bootstrap");
 require("./custom/header-sticky");
+require("./custom/preloader");
 require("./custom/topTop");
 require("./custom/nav-indicators");
 require("./custom/dark-mode");
@@ -9146,6 +9167,6 @@ require("./custom/svgInjector");
 require("./custom/typed");
 require("./custom/mouseover");
 
-},{"./custom/aos":7,"./custom/buttons":8,"./custom/custom-bootstrap":9,"./custom/dark-mode":10,"./custom/header-sticky":12,"./custom/header-sticky-reverse":11,"./custom/mouseover":13,"./custom/nav-indicators":14,"./custom/smooth-scroll":15,"./custom/svgInjector":16,"./custom/topTop":17,"./custom/typed":18}]},{},[19]);
+},{"./custom/aos":7,"./custom/buttons":8,"./custom/custom-bootstrap":9,"./custom/dark-mode":10,"./custom/header-sticky":12,"./custom/header-sticky-reverse":11,"./custom/mouseover":13,"./custom/nav-indicators":14,"./custom/preloader":15,"./custom/smooth-scroll":16,"./custom/svgInjector":17,"./custom/topTop":18,"./custom/typed":19}]},{},[20]);
 
 //# sourceMappingURL=theme.bundle.js.map
