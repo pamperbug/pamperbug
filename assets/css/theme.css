@@ -8,6 +8,15 @@
   font-weight: 300;
 }
 
+.text-center {
+  text-align: center !important;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
 .flex-center {
   display: inline-flex !important;
 }
