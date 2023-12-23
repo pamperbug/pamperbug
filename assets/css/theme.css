@@ -1,4 +1,13 @@
 @charset "UTF-8";
+.mb-6 {
+  margin-bottom: 2.5rem !important;
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
 .flex-center {
   display: inline-flex !important;
 }
