@@ -27,19 +27,17 @@
     <meta property="og:site_name" content="PamperBug">
 
     <link rel="icon" href="assets/images/favicon.ico" type="image/ico">
-    <link rel="preload" as="image" fetchpriority="high" media="all" href="assets/vendor/masterslider/style/blank.gif" nonce>
     <link rel="preload" as="image" fetchpriority="high" media="all" href="assets/images/logo.webp" nonce>
     <link rel="preload" as="image" fetchpriority="high" media="all" href="assets/images/banner-info-1.svg" nonce>
-    <link rel="preload" as="image" fetchpriority="high" media="all" href="assets/images/banner-info-2.svg" nonce>
 
     <!--Box Icons-->
-    <link rel="stylesheet" as="style" href="assets/fonts/boxicons/css/boxicons.min.css" media="all" onload="this.media='all'" nonce>
+    <link rel="stylesheet" as="style" href="assets/fonts/boxicons/css/boxicons.min.css" media="print" onload="this.media='all'" nonce>
 
     <!--AOS Animations-->
-    <link rel="preload stylesheet" as="style" href="assets/vendor/node_modules/css/aos.css" media="all" onload="this.media='all'" nonce>
+    <link rel="preload stylesheet" as="style" href="assets/vendor/node_modules/css/aos.css" media="print" onload="this.media='all'" nonce>
 
     <!--Iconsmind Icons-->
-    <link rel="stylesheet" as="style" href="assets/fonts/iconsmind/iconsmind.css" media="all" onload="this.media='all'" nonce>
+    <link rel="stylesheet" as="style" href="assets/fonts/iconsmind/iconsmind.css" media="print" onload="this.media='all'" nonce>
 
     <!--Google fonts-->
     <link rel="DNS-prefetch" href="https://fonts.googleapis.com">
@@ -48,17 +46,13 @@
     <link rel="preload stylesheet" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,500;1,400;1,500&display=swap" media="print" onload="this.onload=null;this.rel='stylesheet';this.media='all'" nonce>
 
 
-    <!--Master slider-->
-    <link rel="preload stylesheet" as="style" href="assets/vendor/masterslider/style/masterslider.css" media="all" onload="this.media='all'" nonce>
-    <link rel="preload stylesheet" as="style" href="assets/vendor/masterslider/skins/black-1/style.css" media="all" onload="this.media='all'" nonce>
-
     <!--Swiper slider-->
     <link rel="preload stylesheet" as="style" href="assets/vendor/node_modules/css/swiper-bundle.min.css"  media="all" onload="this.media='all'" nonce>
     <!-- Main CSS -->
     <link  rel="preload stylesheet" as="style" href="assets/css/theme.min.css" nonce>
   </head>
 
-  <body>
+  <body class="loading">
      <!--Preloader Spinner-->
      <div class="spinner-loader bg-primary text-white">
         <div class="spinner-border" role="status">
@@ -138,95 +132,35 @@
 
     <!--begin:main content-->
     <main>
-      <!--begin:main slider-->
-      <div class="position-relative overflow-hidden">
-        <div class="ms-skin-black-1 master-slider" id="masterslider">
-          <!--begin:slide-4-->
-          <div class="ms-slide bg-dark" data-delay="3" data-fill-mode="fill">
-            <!--bg-->
-            <img loading="lazy" class="opacity-25" src="assets/vendor/masterslider/style/blank.gif" alt="" title=""
-              data-src="assets/images/banner-info-4.svg" />
-            <!--title-->
-            <div class="ms-layer ms-title text-white" data-effect="front(800)" data-duration="1200" data-delay="600"
-            data-ease="easeInOutCubic" data-hide-effect="top(long,false)" data-offset-x="0" data-offset-y="-40"
-            data-origin="mc" data-position="center" data-masked="false">
-              <div class="text-center">
-                Make It A Year To Remember
-              </div>
-            </div>            <!--button-->
-            <a href="https://amzn.eu/d/5R6mrGc" target="_blank" class="ms-layer ms-btn" data-effect="front(800)" data-duration="1200" data-delay="800"
-            data-ease="easeInOutCubic" data-hide-effect="top(long,false)" data-offset-x="0" data-offset-y="140"
-            data-origin="mc" data-position="center" data-masked="false">
-              <span class="btn btn-lg btn-primary btn-sm">View on Amazon</span>
-            </a>
-          </div>
-          <!--end:slide-4-->
-
-          <!--begin:slide-1-->
-          <div class="ms-slide bg-dark" data-delay="3" data-fill-mode="fill">
-            <img loading="lazy" class="opacity-25" src="assets/vendor/masterslider/style/blank.gif" alt="" title=""
-              data-src="assets/images/banner-info-1.svg" />
-
-            <!--title-->
-            <div class="ms-layer ms-title text-white" data-effect="front(800)" data-duration="1200" data-delay="600"
-              data-ease="easeInOutCubic" data-hide-effect="top(long,false)" data-offset-x="0" data-offset-y="-40"
-              data-origin="mc" data-position="center" data-masked="false">
-              <div class="text-center">
-                Doodle Art Patterns <br>Colouring Book</div>
-            </div>
-            <!--button-->
-            <a href="https://amzn.eu/d/52LfqQW" target="_blank" class="ms-layer ms-btn" data-effect="front(800)" data-duration="1200" data-delay="800"
-              data-ease="easeInOutCubic" data-hide-effect="top(long,false)" data-offset-x="0" data-offset-y="140"
-              data-origin="mc" data-position="center" data-masked="false">
-              <span class="btn btn-lg btn-primary btn-sm">View on Amazon</span>
-            </a>
-          </div>
-          <!--end:slide-1-->
-
-          <!--begin:slide-2-->
-          <div class="ms-slide bg-dark" data-delay="3" data-fill-mode="fill">
-            <!--bg-->
-            <img loading="lazy" class="opacity-25" src="assets/vendor/masterslider/style/blank.gif" alt="" title=""
-              data-src="assets/images/banner-info-2.svg" />
-            <!--title-->
-            <div class="ms-layer ms-title text-white" data-effect="front(800)" data-duration="1200" data-delay="600"
-            data-ease="easeInOutCubic" data-hide-effect="top(long,false)" data-offset-x="0" data-offset-y="-40"
-            data-origin="mc" data-position="center" data-masked="false">
-            <div class="text-center">
-              Can't Wait to Meet Those Tiny Little Feet</div>
-            </div>
-            <!--button-->
-            <a href="https://amzn.eu/d/5q7J5kZ" target="_blank" class="ms-layer ms-btn" data-effect="front(800)" data-duration="1200" data-delay="800"
-            data-ease="easeInOutCubic" data-hide-effect="top(long,false)" data-offset-x="0" data-offset-y="140"
-            data-origin="mc" data-position="center" data-masked="false">
-            <span class="btn btn-lg btn-primary btn-sm">View on Amazon</span>
-            </a>
-          </div>
-          <!--end:slide-2-->
-
-          <!--begin:slide-3-->
-          <div class="ms-slide bg-dark" data-delay="3" data-fill-mode="fill">
-            <!--bg-->
-            <img loading="lazy" class="opacity-25" src="assets/vendor/masterslider/style/blank.gif" alt="" title=""
-              data-src="assets/images/banner-info-3.svg" />
-            <!--title-->
-            <div class="ms-layer ms-title text-white" data-effect="front(800)" data-duration="1200" data-delay="600"
-            data-ease="easeInOutCubic" data-hide-effect="top(long,false)" data-offset-x="0" data-offset-y="-40"
-            data-origin="mc" data-position="center" data-masked="false">
-              <div class="text-center">
-                And So The Adventure Begins</div>
-            </div>
-            <!--button-->
-            <a href="https://amzn.eu/d/35GeAxT" target="_blank" class="ms-layer ms-btn" data-effect="front(800)" data-duration="1200" data-delay="800"
-            data-ease="easeInOutCubic" data-hide-effect="top(long,false)" data-offset-x="0" data-offset-y="140"
-            data-origin="mc" data-position="center" data-masked="false">
-              <span class="btn btn-lg btn-primary btn-sm">View on Amazon</span>
-            </a>
-          </div>
-          <!--end:slide-3-->
+      
+      <section class="position-relative bg-dark text-white overflow-hidden" id="hero">
+        <!--Parallax background-->
+        <img src="assets/images/banner-info-1.svg" class="bg-image opacity-50" alt="">
+        <!--Connected line-->
+        <div class="position-absolute star-0 bottom-0 opacity-50 w-100 text-center justify-content-center text-reset">
+            <div class="connect-line d-inline-block position-relative"> </div>
         </div>
-      </div>
-      <!--end:main slider-->
+        <div class="container position-relative z-1">
+            <div class="row vh-100 d-flex align-items-center justify-content-center text-center">
+                <div class="col-xl-11">
+                    <h2 class="mb-5 display-3">PamperBug <br class="d-none d-md-block">
+                        with stunning
+                        <span class="d-inline-block text-warning" data-typed="{&quot;strings&quot;: [&quot;Ideas&quot;, &quot;designs&quot;, &quot;journals&quot;, &quot;books&quot;, &quot;diaries&quot;, &quot;solutions&quot;]}">Ideas</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true">|</span>
+                    </h2>
+                    <p class="mb-6 lead">FUN often takes a back seat, we need to have fun just as much as we need hard work in our lives.</p>
+                    <div class="">
+                        <a href="https://www.amazon.in/s?i=merchant-items&me=A3FNLPOKMHB88Q&rh=p_n_availability%3A1318485031&dc&qid=1702585388&rnid=1318483031&ref=sr_pg_1" target="_blank" data-effect="front(800)" data-duration="1200" data-delay="800"
+                        data-ease="easeInOutCubic" data-hide-effect="top(long,false)" data-offset-x="0" data-offset-y="140"
+                        data-origin="mc" data-position="center" data-masked="false" class="btn btn-white btn-lg btn-hover-text rounded-1">
+                            <span class="btn-hover-label label-default">Visit Amazon Store</span>
+                            <span class="btn-hover-label label-hover">Visit Amazon Store</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
       <!--begin: features icons-->
       <section class="position-relative border-bottom" id="next">
@@ -1947,37 +1881,16 @@
     <!-- begin:Back to Top button -->
 
     <!-- scripts -->
-    <script src="assets/js/theme.bundle.min.js" nonce></script>
+    <script src="assets/js/theme.bundle.min.js"></script>
 
     <!--Mastert Slider start (Include jquery before master slider js)-->
-    <!-- <script rel="preload" as="script" src="assets/vendor/node_modules/js/jquery.min.js" nonce></script> -->
+    <!-- <script src="assets/vendor/node_modules/js/jquery.min.js" nonce></script> -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <!-- <script rel="preload" as="script" src="assets/vendor/masterslider/jquery.easing.min.js" nonce></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha512-ahmSZKApTDNd3gVuqL5TQ3MBTj8tL5p2tYV05Xxzcfu6/ecvt1A0j6tfudSGBVuteSoTRMqMljbfdU0g2eDNUA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script rel="preload" as="script" src="assets/vendor/masterslider/masterslider.min.js" nonce></script>
     <!--Swiper slider-->
-    <!-- <script rel="preload" as="script" src="assets/vendor/node_modules/js/swiper-bundle.min.js" nonce></script> -->
+    <!-- <script src="assets/vendor/node_modules/js/swiper-bundle.min.js" nonce></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.min.js" integrity="sha512-2w85qGM9apXW9EgevsY4S4fnJIUz6U6mXlLbgDKphBuwh7jPQNad70Ll5W+pcIrJ6rIMGpjP0CxYGQwKsynIaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
-      var slider = new MasterSlider();
-      slider.setup('masterslider', {
-        width: 1140,
-        height: 660,
-        minHeight: 400,
-        space: 0,
-        start: 1,
-        grabCursor: false,
-        layout: "fullwidth",
-        wheel: false,
-        autoplay: true,
-        instantStartLayers: true,
-        loop: true,
-        view: "basic",
-        instantStartLayers: true,
-      });
-      slider.control('arrows');
-
       //swiper-projects
       var swiperProjects = new Swiper(".swiper-projects", {
         autoHeight: true,
