@@ -9053,7 +9053,7 @@ indicatorsV.forEach(function (indicatorV) {
 },{}],15:[function(require,module,exports){
 "use strict";
 
-//For Live Projects
+//For Live Projects.
 // Add a 'loading' class to the body when a new page is being loaded
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelector('body').classList.add('loading');
@@ -9156,6 +9156,7 @@ initTyped.forEach(function (eType) {
 require("./custom/custom-bootstrap");
 require("./custom/header-sticky");
 require("./custom/preloader");
+require("./custom/typed");
 require("./custom/topTop");
 require("./custom/nav-indicators");
 require("./custom/dark-mode");
@@ -9164,7 +9165,6 @@ require("./custom/aos");
 require("./custom/buttons");
 require("./custom/smooth-scroll");
 require("./custom/svgInjector");
-require("./custom/typed");
 require("./custom/mouseover");
 
 },{"./custom/aos":7,"./custom/buttons":8,"./custom/custom-bootstrap":9,"./custom/dark-mode":10,"./custom/header-sticky":12,"./custom/header-sticky-reverse":11,"./custom/mouseover":13,"./custom/nav-indicators":14,"./custom/preloader":15,"./custom/smooth-scroll":16,"./custom/svgInjector":17,"./custom/topTop":18,"./custom/typed":19}]},{},[20]);
