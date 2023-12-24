@@ -9077,11 +9077,6 @@ var lazyLoadImages = function lazyLoadImages(imgArray) {
           if (loaded) {
             mutation.target.src = mutation.target.dataset.src;
             mutation.target.removeAttribute('loading');
-            var imgPar = mutation.target.closest('.swiper-wrapper');
-            var total = imgPar.dataset.total;
-            if (total && index + 1 === parseInt(total, 10)) {
-              // mutation.target.offsetHeight
-            }
             observer.disconnect();
           }
         }
