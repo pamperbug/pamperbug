@@ -9064,7 +9064,6 @@ window.addEventListener('load', function () {
   document.querySelector('body').classList.remove('loading');
   document.querySelector('body').classList.add('loaded');
   var imgArray = document.querySelectorAll('[data-src]');
-  console.log(imgArray.length);
   imgArray.forEach(function (img, index) {
     // img.setAttribute('style', 'visibility:visible')
     // img.addEventListener('visibilitychange', e => (img.src = img.dataset.src))
