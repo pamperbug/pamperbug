@@ -26,6 +26,21 @@ p {
   display: inline-block !important;
 }
 
+.mb-5 {
+  margin-bottom: 2rem !important;
+}
+
+.display-3 {
+  font-size: calc(1.5rem + 3vw);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+@media (min-width: 1200px) {
+  .display-3 {
+    font-size: 3.75rem;
+  }
+}
 .flex-center {
   display: inline-flex !important;
 }
