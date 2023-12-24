@@ -9063,6 +9063,40 @@ document.addEventListener('DOMContentLoaded', function () {
 window.addEventListener('load', function () {
   document.querySelector('body').classList.remove('loading');
   document.querySelector('body').classList.add('loaded');
+  var imgArray = document.querySelectorAll('[data-src]');
+  console.log(imgArray.length);
+  imgArray.forEach(function (img, index) {
+    // img.setAttribute('style', 'visibility:visible')
+    // img.addEventListener('visibilitychange', e => (img.src = img.dataset.src))
+    var element = img;
+    // Options for the observer (which mutations to observe)
+    var config = {
+      attributes: true,
+      childList: true,
+      subtree: true
+    };
+    var observer = new MutationObserver(function (mutations) {
+      mutations.forEach(function (mutation) {
+        var target = mutation.target;
+        if (mutation.attributeName === 'class') {
+          var loaded = mutation.target.classList.contains('loaded');
+          if (loaded) {
+            mutation.target.src = mutation.target.dataset.src;
+            mutation.target.removeAttribute('loading');
+            var imgPar = mutation.target.closest('.swiper-wrapper');
+            var total = imgPar.dataset.total;
+            if (total && index + 1 === parseInt(total, 10)) {
+              // mutation.target.offsetHeight
+            }
+            observer.disconnect();
+          }
+        }
+      });
+    });
+    // Start observing the target node for configured mutations
+    observer.observe(element, config);
+    element.classList.add('loaded');
+  });
 });
 
 // Display the preloader when a new page is being loaded
