@@ -89,13 +89,6 @@ html[data-bs-theme=auto] .theme-icon-active i::after {
   height: 2rem;
 }
 
-.navbar-brand-sticky, .navbar-brand-transparent {
-  background: #fff;
-  padding: 8px;
-  border-radius: 4px;
-  min-width: 156px;
-}
-
 .section-image-cards .img-cards {
   max-height: 400px;
 }
@@ -22780,17 +22773,36 @@ html[data-bs-theme=auto] .theme-icon-active i::after {
   height: 2rem;
 }
 
+.navbar-brand {
+  min-width: 188px !important;
+}
+
 .navbar-brand-sticky, .navbar-brand-transparent {
   background: #fff;
-  padding: 8px;
+  padding: 4px;
   border-radius: 4px;
-  min-width: 156px;
+  min-height: 58px;
+  width: auto !important;
+  max-height: 58px;
 }
 
 .section-image-cards .img-cards {
   max-height: 400px;
 }
 
+.swiper-autoheight .swiper-wrapper {
+  height: auto !important;
+}
+
+@media screen and (max-width: 768px) {
+  .item-image-row {
+    justify-content: start !important;
+  }
+  .item-image-col {
+    justify-content: start;
+    display: flex;
+  }
+}
 @media screen and (min-width: 1400px) {
   .swiper-pagination .swiper-pagination-bullet {
     width: 3rem;
