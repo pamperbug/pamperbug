@@ -9054,12 +9054,8 @@ indicatorsV.forEach(function (indicatorV) {
 "use strict";
 
 //For Live Projects.
-
 var lazyLoadImages = function lazyLoadImages(imgArray) {
-  imgArray.forEach(function (img, index) {
-    // img.setAttribute('style', 'visibility:visible')
-    // img.addEventListener('visibilitychange', e => (img.src = img.dataset.src))
-    var element = img;
+  imgArray.forEach(function (img) {
     // Options for the observer (which mutations to observe)
     var config = {
       attributes: true,
@@ -9070,18 +9066,18 @@ var lazyLoadImages = function lazyLoadImages(imgArray) {
       mutations.forEach(function (mutation) {
         var target = mutation.target;
         if (mutation.attributeName === 'class') {
-          var loaded = mutation.target.classList.contains('loaded');
+          var loaded = target.classList.contains('loaded');
           if (loaded) {
-            mutation.target.src = mutation.target.dataset.src;
-            mutation.target.removeAttribute('loading');
+            target.src = target.dataset.src;
+            target.removeAttribute('loading');
             observer.disconnect();
           }
         }
       });
     });
     // Start observing the target node for configured mutations
-    observer.observe(element, config);
-    element.classList.add('loaded');
+    observer.observe(img, config);
+    img.classList.add('loaded');
   });
 };
 
