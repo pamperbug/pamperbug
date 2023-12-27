@@ -9054,10 +9054,7 @@ indicatorsV.forEach(function (indicatorV) {
 "use strict";
 
 //For Live Projects.
-// Add a 'loading' class to the body when a new page is being loaded
-document.addEventListener('DOMContentLoaded', function () {
-  document.querySelector('body').classList.add('loading');
-});
+
 var lazyLoadImages = function lazyLoadImages(imgArray) {
   imgArray.forEach(function (img, index) {
     // img.setAttribute('style', 'visibility:visible')
@@ -9087,12 +9084,18 @@ var lazyLoadImages = function lazyLoadImages(imgArray) {
     element.classList.add('loaded');
   });
 };
+
+// Add a 'loading' class to the body when a new page is being loaded
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelector('body').classList.add('loading');
+  var imgArray = document.querySelectorAll('[data-src]');
+  lazyLoadImages(imgArray);
+});
+
 // Remove the 'loading' class from the body when the page is loaded
 window.addEventListener('load', function () {
   document.querySelector('body').classList.remove('loading');
   document.querySelector('body').classList.add('loaded');
-  var imgArray = document.querySelectorAll('.portfolio [data-src]');
-  lazyLoadImages(imgArray);
 });
 
 // Display the preloader when a new page is being loaded

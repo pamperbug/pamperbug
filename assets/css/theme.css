@@ -22774,6 +22774,7 @@ html[data-bs-theme=auto] .theme-icon-active i::after {
 }
 
 .navbar-brand {
+  display: contents;
   min-width: 138px !important;
 }
 
@@ -22796,10 +22797,10 @@ html[data-bs-theme=auto] .theme-icon-active i::after {
 
 @media screen and (max-width: 768px) {
   .item-image-row {
-    justify-content: start !important;
+    justify-content: flex-start !important;
   }
   .item-image-col {
-    justify-content: start;
+    justify-content: flex-start;
     display: flex;
   }
 }
