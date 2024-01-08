@@ -22795,6 +22795,10 @@ html[data-bs-theme=auto] .theme-icon-active i::after {
   height: auto !important;
 }
 
+.swiper-autoheight .swiper-wrapper .swiper-slide {
+  background: #fff;
+}
+
 @media screen and (max-width: 768px) {
   .item-image-row {
     justify-content: flex-start !important;
