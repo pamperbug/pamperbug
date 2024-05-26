@@ -22925,7 +22925,7 @@ html[data-bs-theme=auto] .theme-icon-active i::after {
   [data-bs-theme=dark] .portfolio .swiper-slide .align-items-end {
     background-color: #080713;
   }
-  [data-bs-theme=light] .portfolio .swiper-slide .align-items-end {
+  [data-bs-theme=light] .portfolio .swiper-slide .align-items-end, [data-bs-theme=auto] .portfolio .swiper-slide .align-items-end {
     background-color: #fff;
     color: black;
   }
