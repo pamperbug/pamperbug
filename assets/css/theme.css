@@ -22920,4 +22920,14 @@ html[data-bs-theme=auto] .theme-icon-active i::after {
   --bs-text-opacity: 1;
   background: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
 }
+
+@media screen and (max-width: 599px) {
+  [data-bs-theme=dark] .portfolio .swiper-slide .align-items-end {
+    background-color: #080713;
+  }
+  [data-bs-theme=light] .portfolio .swiper-slide .align-items-end {
+    background-color: #fff;
+    color: black;
+  }
+}
 /*# sourceMappingURL=theme.css.map */
