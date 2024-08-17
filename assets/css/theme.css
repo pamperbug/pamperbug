@@ -22930,4 +22930,13 @@ html[data-bs-theme=auto] .theme-icon-active i::after {
     color: black;
   }
 }
+.swiper-hero, .swiper-slide {
+  height: auto;
+}
+
+@media screen and (min-width: 1440px) {
+  .swiper-hero {
+    height: calc(100vh - 66px);
+  }
+}
 /*# sourceMappingURL=theme.css.map */
