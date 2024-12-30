@@ -259,48 +259,6 @@
         </a>
         <!-- scripts -->
         <script src="assets/js/theme.bundle.min.js"></script>
-
-        <!--Splitting js-->
-        <script src="assets/vendor/node_modules/js/splitting.min.js"></script>
-        <script>
-            Splitting();
-            document.querySelectorAll("[data-split-image]").forEach(e => {
-                setTimeout(function () {
-                    Splitting({
-                        target: '[data-rows], [data-columns], [data-image]',
-                        by: 'cells',
-                        image: true
-                    });
-
-                })
-            });
-        </script>
-        
-        <!--Copy to clipboard + prismJs-->
-        <script src="assets/vendor/node_modules/js/prism.js"></script>
-        <script src="assets/vendor/node_modules/js/clipboard.min.js"></script>
-        <script>
-           /* Clipboard JS - Copy code button */
-var cl = document.querySelector('.copy-link');
-if(typeof !!cl && (cl) != 'undefined' && cl != null) {
-        var cle = document.querySelectorAll('.copy-link');
-        cle.forEach(el => {
-            el.addEventListener("click", function () {
-                      var theButton = this;
-                      var copyId = this.getAttribute('id');
-                      var clipboard = new ClipboardJS( '#' + copyId );
-                      
-                      clipboard.on('success', function(e) {
-                        e.clearSelection();
-                      theButton.innerHTML = 'Copied!';
-                      setTimeout(function() {
-                          theButton.innerHTML = 'Copy code';
-                        }, 5000);
-                      });
-            });         
-        });
-} 
-        </script>
     </body>
 
 </html>
